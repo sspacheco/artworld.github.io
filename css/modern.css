@@ -1,0 +1,350 @@
+body {
+    background: linear-gradient(to right, #d6d6d6, #ffffff, #fbfcf8, #cccccc, #ffffff);
+    background-size: 300% 300%;
+    height: 100vh;
+    margin: 0;
+    animation: circularMove 10s ease-in-out infinite;
+    font-family: 'Montserrat';
+}
+
+@keyframes circularMove {
+    0% {
+        background-position: 50% 0%; 
+    }
+    25% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../fonts/RedHatDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Regular.ttf') format('truetype');
+}
+
+
+
+header {
+    text-align: center;
+    padding: 0px 0;
+}
+
+.logo {
+    font-family: 'Playfair Display';
+    color: #1A1A2E;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0px  15px 25px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 45px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin: 0 30px 15px; 
+}
+
+nav ul li a {
+    font-family: 'Lato';
+    text-decoration: none;
+    color: #1A1A2E;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #0073ff;
+}
+
+.hero-image {
+    width: 367px;
+    height: 398px;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    border: 5px solid #595547;
+    object-fit: cover;
+}
+
+.hero-image2 {
+    width: 367px;
+    height: 398px;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    border: 5px solid #5c3745;
+    object-fit: cover;
+
+}
+
+#hero h1 {
+    font-family: 'Lora';
+    font-size: 60px;
+    margin-top: 20px;
+    color: #1A1A2E;
+    text-align: center;
+    margin-bottom: none;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-family: 'Montserrat';
+    font-size: 27px;
+    color: #1A1A2E;
+    text-align: center;
+    margin-top: -25px;
+    font-weight: 600;
+}
+
+.biography {
+    font-family: 'Montserrat';
+    font-size: 17px;
+    text-align: justify;
+    color: #333;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-weight:600;
+}
+
+#notable-works {
+    text-align: center;
+    margin: 40px auto;
+    width: 90%; 
+    max-width: 1000px;
+    margin-top: 45px;
+}
+
+#notable-works h2, #style-influence h2, #quotes h2 {
+    font-size: 40px;
+    font-family: 'Lato';
+    margin-bottom: 35px;
+    color: #1A1A2E;
+    font-weight: 600;
+}
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px; 
+}
+
+
+.work-card {
+    background-color: #f5f5f5; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #dddddd, #ffffff);
+    box-shadow:  15px 15px 12px #d0d0d0,
+             -15px -15px 12px #ffffff;
+}
+
+.work-card:hover {
+    transform: scale(1.05); 
+}
+
+.image-container {
+    width: 100%;
+    aspect-ratio: 3 / 4; 
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.work-card h3 {
+    font-family: 'Lora';
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    color: #1A1A2E;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.work-card p {
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    color: #444; 
+}
+
+#style-influence {
+    text-align: center;
+    margin: 40px auto;
+    width: 95%; 
+    max-width: 1000px;
+    margin-top: 80px;
+}
+
+#style-influence p {
+    font-family: 'Montserrat';
+    font-size: 17px;
+    text-align: justify;
+    color: #333;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 75%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-weight:600;
+    margin-top: -5px;
+}
+
+#quotes {
+    text-align: center;
+    margin: 40px auto;
+    width: 90%; 
+    max-width: 1000px;
+    margin-top: 80px;
+}
+
+#quotes p {
+    font-family: 'Lora';
+    font-size: 25px;
+    text-align: center;
+    color: #333;
+    margin: auto;
+    line-height: 1.5;
+    font-weight:600;
+    margin-top: -5px;
+    margin-bottom: 0;
+}
+
+.quote-footer {
+    font-family: 'Montserrat';
+    font-size: 17px;
+    text-align: center;
+    color: #333;
+    margin-top: 4px;
+}
+
+#social-media2 a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+#social-media2 a:hover {
+    color: #52ceff;
+}
+
+#social-media2 p {
+    margin-bottom: 10px; 
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;      
+    transition: color 0.3s ease; 
+}
+
+footer ul li a:hover {
+    color: #52ceff;
+}
+
+/* Responsive CSS*/
+@media (max-width: 768px) {
+    .work-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    
+    .work-card h3 {
+        font-size: 1rem;
+    }
+
+    .work-card p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #hero h1 {
+        font-size: 7.5vw;
+    }
+
+    .subtitle {
+        font-size: 5vw;
+    }
+
+    .hero-image {
+        width: 50%;
+        height: 65%;
+    }
+}
+
+@media (max-width: 480px) {
+    .work-gallery {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .work-card h3 {
+        font-size: 0.9rem;
+    }
+
+    .work-card p {
+        font-size: 0.75rem;
+    }
+
+    #hero h1 {
+        font-size: 7.5vw;
+    }
+
+    .subtitle {
+        font-size: 5vw;
+    }
+}

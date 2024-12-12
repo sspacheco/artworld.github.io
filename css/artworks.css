@@ -1,0 +1,324 @@
+body {
+    background: linear-gradient(to right, #d6d6d6, #ffffff, #fbfcf8, #cccccc, #ffffff);
+    background-size: 300% 300%; 
+    height: 100vh;
+    margin: 0;
+    animation: circularMove 10s ease-in-out infinite;
+    font-family: 'Montserrat';
+}
+
+@keyframes circularMove {
+    0% {
+        background-position: 50% 0%; 
+    }
+    25% {
+        background-position: 100% 50%; 
+    }
+    50% {
+        background-position: 50% 100%; 
+    }
+    75% {
+        background-position: 0% 50%; 
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../fonts/RedHatDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Regular.ttf') format('truetype');
+}
+
+
+
+header {
+    text-align: center;
+    padding: 0px 0;
+}
+
+.logo {
+    font-family: 'Playfair Display';
+    color: #1A1A2E;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0px  15px 25px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 45px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin: 0 30px 15px; 
+}
+
+nav ul li a {
+    font-family: 'Lato';
+    text-decoration: none;
+    color: #1A1A2E;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #0073ff;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+
+}
+
+.banner-txt {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-65%);
+    text-align: left;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.banner-txt h1 {
+    font-family: 'Lora';
+    color: #f8f1d6;
+    font-size: 4.5vw;
+    margin: 0 0 5px 0;
+    font-weight: 400;
+    padding: 0;
+}
+
+.banner-txt p {
+    font-family: 'Montserrat';
+    color:#f8f1d6;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: -3px;
+    font-weight: 100;
+}
+
+.artworks {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.artwork-card {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 3 / 4; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+    margin: 10px auto;
+    height: auto;
+    width: 350px;
+}
+
+.art-container {
+    width: 100%;
+    padding-top: 100%; 
+    position: relative;
+    overflow: hidden;
+    background-color: #d6d6d6;
+}
+
+.art-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%; 
+    height: auto; 
+    max-width: 100%; 
+    max-height: 95%; 
+    object-fit: contain; 
+    transform: translate(-50%, -50%); 
+}
+
+.artwork-card:hover {
+    transform: scale(1.05);
+}
+
+.art-details {
+    flex-grow: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9f9f9;
+    
+}
+
+.art-details .title {
+    font-family: 'Lora';
+    font-weight: bold;
+    font-size: 18px;
+    color: #1A1A2E;
+    margin-left: 10px;
+}
+
+.art-details .artist {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: #333;
+    margin-left: 10px;
+    
+    font-weight: bold;
+}
+
+.art-details .artist a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.art-details .artist a:hover {
+    border-bottom: solid #555;
+}
+
+.art-details .year {
+    font-family: 'Lato';
+    font-size: 13px;
+    color: #333;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#social-media2 a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+#social-media2 a:hover {
+    color: #52ceff;
+}
+
+#social-media2 p {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;         
+    transition: color 0.3s ease;   
+}
+
+footer ul li a:hover {
+    color: #52ceff; 
+}
+
+
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+
+    .banner-img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: calc(100% - 5%);
+    }
+
+    .artworks {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px; 
+    }
+
+    .banner-txt h1 {
+        font-size: 8vw; 
+    }
+    
+    .banner-txt p {
+        font-size: 3vw;
+    }
+    .art-details .title {
+        font-size: 18px;
+    }
+
+    .art-details .artist {
+        font-size: 15px;
+    }
+
+    .art-details .year {
+        font-size: 13px;
+    }
+
+    .artwork-card {
+        aspect-ratio: 3 / 4; 
+        
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .banner-img {
+        height: 140px;
+        width: 100%;
+        object-fit: cover;
+        object-position: calc(100% - 5%);
+    }
+
+    .artworks {
+        gap: 15px; /
+    }
+    
+    .artworks {
+        grid-template-columns: 1fr; 
+    }
+
+    .artwork-card {
+        margin: 0 auto; 
+    }
+}
+
+@media (max-width: 320px) {
+    .banner-txt h1 {
+        font-size: 15vw; 
+    }
+    
+    .banner-txt p {
+        font-size: 6vw;
+    }
+}

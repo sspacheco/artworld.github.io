@@ -1,0 +1,301 @@
+body {
+    background: linear-gradient(to right, #d6d6d6, #ffffff, #fbfcf8, #cccccc, #ffffff);
+    background-size: 300% 300%; 
+    height: 100vh;
+    margin: 0;
+    animation: circularMove 10s ease-in-out infinite;
+    font-family: 'montserrat';
+    
+}
+
+@keyframes circularMove {
+    0% {
+        background-position: 50% 0%; 
+    }
+    25% {
+        background-position: 100% 50%; 
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 0% 50%; 
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../fonts/RedHatDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Regular.ttf') format('truetype');
+}
+
+header {
+    text-align: center;
+    padding: 0px 0;
+}
+
+.logo {
+    font-family: 'Playfair Display';
+    color: #1A1A2E;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0px  15px 25px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 45px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin: 0 30px 15px; 
+}
+
+nav ul li a {
+    font-family: 'Lato';
+    text-decoration: none;
+    color: #1A1A2E;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #0073ff;
+}
+
+.banner {
+    position: relative;
+    border-radius: 10px;
+}
+
+.banner-img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.sec-body {
+    text-align: justify;
+    padding: 10px;
+    margin: 0 35px 0 35px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.25vw;
+}
+
+.sec-body2 {
+    text-align: left;
+    padding: 10px;
+    margin: 0 25px 0 25px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.10vw;
+}
+
+.sec-title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 3vw;
+    margin-top: 10px;
+}
+
+.sec-title2 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 2.5vw;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sec-2 {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+span {
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-weight: 3vw;
+}
+
+.title {
+    font-size: 3.75vw;
+    font-weight: 500;
+    font-family: 'Playfair Display';
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 2vw;
+
+}
+
+.creator-name {
+    font-family: 'Montserrat';
+    font-size: 2.5vw;
+    
+}
+
+.creator-img {
+    max-width: 200px;
+}
+
+.creator-work {
+    max-height: 375px;
+    margin-right: 10px;
+}
+
+.explore {
+    text-align: center;
+    border-bottom: solid 1px #aeaeac;
+}
+
+
+.foot {
+    font-family: 'Montserrat';
+    color: #ffffff;
+}
+
+
+#social-media2 a {
+    color: #ffffff;        
+    font-size: 1.5rem;     
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+#social-media2 a:hover {
+    color: #52ceff;
+}
+
+#social-media2 p {
+    margin-bottom: 10px;   
+}
+
+footer ul li a {
+    color: #ffffff;                
+    text-decoration: none;         
+    transition: color 0.3s ease;   
+}
+
+footer ul li a:hover {
+    color: #52ceff;
+}
+
+
+/* Responsive CSS*/
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 5vw;
+    }
+
+    .sec-title {
+        font-size: 4vw;
+    }
+
+    .sec-title2 {
+        font-size: 3.5vw;
+    }
+
+    .sec-body {
+        font-size: 2.25vw;
+        margin: 0 15px 0 15px;
+    }
+
+    .sec-body2 {
+        font-size: 2.10vw;
+        margin: 0 10px 0 10px;
+    }
+
+    footer h2 {
+        font-size: 3.2vw;
+    }
+
+    footer p {
+        font-size: 2.3vw;
+    }
+
+    .creator-name {
+        font-size: 3.5vw;
+
+    }
+
+    .creator-work {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 7vw;
+    }
+
+    .sec-title {
+        font-size: 6vw;
+    }
+
+    .sec-title2 {
+        font-size: 5.5vw;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .sec-body {
+        font-size: 4.25vw;
+        margin: 0 15px 0 15px;
+    }
+
+    .sec-body2 {
+        font-size: 4.10vw;
+        margin: 0 10px 0 10px;
+    }
+
+    footer h2 {
+        font-size: 5.2vw;
+    }
+
+    footer p {
+        font-size: 4vw;
+    }
+
+    .creator-name {
+        font-size: 5vw;
+    }
+
+    .creator-work {
+        max-height: 300px;
+    }
+}

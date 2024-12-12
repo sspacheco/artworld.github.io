@@ -1,0 +1,318 @@
+body {
+    background: linear-gradient(to right, #d6d6d6, #ffffff, #fbfcf8, #cccccc, #ffffff);
+    background-size: 300% 300%; 
+    height: 100vh;
+    margin: 0;
+    animation: circularMove 10s ease-in-out infinite;  
+    font-family: 'montserrat';
+}
+
+@keyframes circularMove {
+    0% {
+        background-position: 50% 0%; 
+    }
+    25% {
+        background-position: 100% 50%; 
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 0% 50%; 
+    }
+    100% {
+        background-position: 50% 0%; 
+    }
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../fonts/RedHatDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Regular.ttf') format('truetype');
+}
+
+header {
+    text-align: center;
+    padding: 0px 0;
+}
+
+.logo {
+    font-family: 'Playfair Display';
+    color: #1A1A2E;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0px  15px 25px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 45px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin: 0 30px 15px; 
+}
+
+nav ul li a {
+    font-family: 'Lato';
+    text-decoration: none;
+    color: #1A1A2E;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #0073ff;
+}
+
+
+#slider {
+    overflow: hidden;
+    margin: none;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%; 
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    float: left;
+    width: 20%; 
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.custom-card {
+    overflow-x: hidden;
+}
+
+.custom-card-body {
+    flex: 0 0 35%; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.custom-card-img {
+    flex: 0 0 65%; 
+    overflow: hidden;
+}
+
+.custom-card-img img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+}
+
+.carousel-item a {
+    text-decoration: none;
+}
+
+#ccd1 {
+    background-color: #584f3c;
+}
+
+#ccd2 {
+    background-color: #7f3126;
+}
+
+#ccd3 {
+    background-color: #283633;
+}
+
+#ccd4 {
+    background-color: #291a12;
+}
+
+.custom-card-title {
+    font-family: 'Playfair Display';
+    color: #fffff9;
+    font-size: 5vw;
+    padding: 15px;
+}
+
+.custom-card-text {
+    font-family: 'Montserrat';
+    color: #d9d9d9;
+    font-size: 1.75vw;
+    padding: 5px;
+}
+
+.custom-carousel-indicators {
+    text-align: center; 
+    bottom: -40px;
+    
+}
+
+.custom-carousel-indicators .active {
+    background-color: #1A1A2E; 
+    opacity: 0.5; 
+}
+  
+#social-media2 a {
+    color: #ffffff;       
+    font-size: 1.5rem;    
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+#social-media2 a:hover {
+    color: #52ceff;        
+}
+
+#social-media2 p {
+    margin-bottom: 10px;   
+}
+
+footer ul li a {
+    color: #ffffff;                
+    text-decoration: none;         
+    transition: color 0.3s ease;   
+}
+
+footer ul li a:hover {
+    color: #52ceff;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+span {
+    font-family: 'Playfair Display';
+}
+
+.card-title2 {
+    font-family: 'Lora';
+    font-weight: bold;
+}
+
+.artist-thumbnail {
+    width: 100%;
+    height: 0;
+    padding-top: 100%; 
+    position: relative;  
+    overflow: hidden;
+}
+  
+.artist-thumbnail img {
+    position: absolute; 
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+  
+.featured-artists h2 {
+    font-weight: bold;
+}
+
+.artwork-thumbnail {
+    width: 100%;
+    height: 0;
+    padding-top: 100%; 
+    position: relative;
+    overflow: hidden;
+}
+  
+.artwork-thumbnail img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-container { 
+    position: relative; 
+    max-width: 100%; 
+    background: #000;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+} 
+
+.video-container video {  
+    width: 100%; 
+    height: 100%; 
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .custom-card {
+      flex-direction: column; 
+    }
+  
+    .custom-card-body {
+      width: 100%; 
+    }
+  
+    .custom-card img {
+      width: 100%; 
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        margin-left: 5px;
+    }
+
+    .custom-card {
+      flex-direction: column; 
+    }
+  
+    .custom-card-body {
+      width: 100%; 
+  
+    .custom-card img {
+      width: 100%; 
+    }
+
+    .custom-card-title {
+        padding: 0;
+        font-size: 7vw;
+    }
+
+    .custom-card-text{
+        margin-bottom: 20px;
+        padding: 0;
+        font-size: 3vw;
+    }
+}
+}

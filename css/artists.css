@@ -1,0 +1,396 @@
+body {
+    background: linear-gradient(to right, #d6d6d6, #ffffff, #fbfcf8, #cccccc, #ffffff);
+    background-size: 300% 300%;
+    height: 100vh;
+    margin: 0;
+    animation: circularMove 10s ease-in-out infinite;  
+    font-family: 'montserrat';
+}
+
+@keyframes circularMove {
+    0% {
+        background-position: 50% 0%; 
+    }
+    25% {
+        background-position: 100% 50%; 
+    }
+    50% {
+        background-position: 50% 100%; 
+    }
+    75% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 50% 0%; 
+    }
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../fonts/RedHatDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Regular.ttf') format('truetype');
+}
+
+header {
+    text-align: center;
+    padding: 0px 0;
+}
+
+.logo {
+    font-family: 'Playfair Display';
+    color: #1A1A2E;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0px  15px 25px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 45px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 30px 15px; 
+}
+
+nav ul li a {
+    font-family: 'Lato';
+    text-decoration: none;
+    color: #1A1A2E;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #0073ff;
+}
+
+.banner {
+    position: relative;
+    border-radius: 10px;
+}
+
+.banner-img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.banner-txt {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-65%);
+    text-align: left;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.banner-txt h1 {
+    font-family: 'Lora';
+    color: #f8f1d6;
+    font-size: 4.5vw;
+    margin: 0 0 5px 0;
+    font-weight: 400;
+    padding: 0;
+}
+
+.banner-txt p {
+    font-family: 'Montserrat';
+    color:#f8f1d6;
+    font-size: 1.5vw;
+    padding: 0;
+    margin: -3px;
+    font-weight: 100;
+}
+
+#classical-artist {
+    text-align: left;
+    max-width: 1000px;
+    margin-top: 45px;
+}
+
+#classical-artist h2 {
+    font-family: 'Montserrat';
+    font-size: 3vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    color: #1A1A2E;
+    font-weight: 600;
+}
+
+#modern-artist {
+    text-align: left;
+    max-width: 1000px;
+    margin-top: 70px;
+}
+
+#modern-artist h2 {
+    font-family: 'Montserrat';
+
+    font-size: 3vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    color: #1A1A2E;
+    font-weight: 600;
+}
+
+.artists-gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px; 
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.artist-card {
+    width: 260px;
+    height: 350px;
+    background-color: #f5f5f5; 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    background: linear-gradient(145deg, #dddddd, #ffffff);
+    box-shadow:  15px 15px 12px #d0d0d0, -15px -15px 12px #ffffff;
+    justify-content: center;
+}
+
+.artist-card:hover {
+    transform: scale(1.05); 
+}
+
+
+.img-container {
+    width: 100%;
+    aspect-ratio: 5 / 5; 
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd; 
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.artist-card h3 {
+    font-family: 'Lora';
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    color: #1A1A2E;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.artist-card p {
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    color: #333; 
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.artist-card a {
+    text-decoration: none;
+
+}
+
+.artist-card a:hover {
+    color: #4497fd;
+}
+
+#social-media2 a {
+    color: #ffffff;        
+    font-size: 1.5rem;     
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+#social-media2 a:hover {
+    color: #52ceff;        
+}
+
+#social-media2 p {
+    margin-bottom: 10px;  
+}
+
+footer ul li a {
+    color: #ffffff;                
+    text-decoration: none;        
+    transition: color 0.3s ease;  
+}
+
+footer ul li a:hover {
+    color: #52ceff;                
+}
+
+/* Responsive CSS */
+@media (max-width: 1200px) {
+    #classical-artist, #modern-artist {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .artists-gallery {
+        margin-left: 20px;
+        gap: 30px; 
+    }
+
+    .artist-card {
+        width: 220px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-txt h1 {
+        font-size: 8vw; 
+    }
+    
+    .banner-txt p {
+        font-size: 3vw;
+    }
+
+    .banner-img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: calc(100% - 5%);
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .artists-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .img-container {
+        height: 200px;
+    }
+
+    #classical-artist h2, #modern-artist h2 {
+        font-size: 5vw;
+        margin-left: 20px;
+    }
+
+    .artists-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .artist-card {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .footer-links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .banner-img {
+        height: 140px;
+        width: 100%;
+        object-fit: cover;
+        object-position: calc(100% - 5%);
+    }
+
+    #classical-artist h2, #modern-artist h2 {
+        font-size: 6vw;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .artists-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+        padding: 0; 
+        margin: 25px 0 0 0 ; 
+        max-width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    .artist-card {
+        margin: 0;
+        padding: 20px;
+        box-shadow: none; 
+        border-radius: 5px;
+        max-width: 95%;
+    }
+
+    .img-container {
+        height: auto;
+        border-radius: 5px;
+
+    }
+
+}
+
+@media (max-width: 320px) {
+    .banner-txt h1 {
+        font-size: 15vw; 
+    }
+    
+    .banner-txt p {
+        font-size: 6vw;
+    }
+}
